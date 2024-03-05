@@ -15,9 +15,6 @@
               - score - will be initialized at 0
               - life - will be initialized at 3
 
-          - Public Methods:
-              - change_name(name): Updates the players name and returns the new name
-
           - Private Methods:
               - update_score: Updates score +10 points
 
@@ -38,6 +35,7 @@
               - End the game when players health reaches 0.
             
           - Attributes:
+              - initialize Player1 & Player 2
               - initialize ( answer = 0 )
 
           - Public Methods:

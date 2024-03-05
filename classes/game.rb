@@ -4,8 +4,9 @@ require_relative 'player'
 class Game
   include Question
 
-  def initialize
-    @player = Player.new('Player 1')
+  def initialize(player1, player2)
+    @player_one = Player.new(player1)
+    @player_two = Player.new(player2)
     @answer = 0
   end
 
@@ -15,26 +16,68 @@ class Game
       question, @answer = addition
       puts question
       input = gets.chomp.to_i
-        if integer(input) 
+        if integer?(input) 
           if @answer == input
-            puts "#{input}"
-            @player.increment_score
-            puts "score updated!"
-            puts "Player 1 score is: #{@player.score}"
-            end
+            puts "YES! You are correct."
+            # update score
+            # next players turn
+          else
+            puts "Seriously? No!"
+            # update lives
+            # next players turn
+          end
         end 
     when 2
-      subraction
+      question, @answer = subtraction
+      puts question
+      input = gets.chomp.to_i
+        if integer?(input) 
+          if @answer == input
+            puts "YES! You are correct."
+            # update score
+            # next players turn
+          else
+            puts "Seriously? No!"
+            # update lives
+            # next players turn
+          end
+        end 
     when 3
-      multiplication
+      question, @answer = multiplication
+      puts question
+      input = gets.chomp.to_i
+        if integer?(input) 
+          if @answer == input
+            puts "YES! You are correct."
+            # update score
+            # next players turn
+          else
+            puts "Seriously? No!"
+            # update lives
+            # next players turn
+          end
+        end 
     when 4
-      division
+      question, @answer = division
+      puts question
+      input = gets.chomp.to_i
+        if integer?(input) 
+          if @answer == input
+            puts "YES! You are correct."
+            # update score
+            # next players turn
+          else
+            puts "Seriously? No!"
+            # update lives
+            # next players turn
+          end
+        end 
     else
       "Enter a number between 1 & 4."
     end
   end
 
-  def integer(input)
+  def integer?(input)
     if input.to_s.match?(/\A\d+\z/)
       return true
     else
