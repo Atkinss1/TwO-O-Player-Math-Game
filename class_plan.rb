@@ -18,6 +18,9 @@
           - Public Methods:
               - change_name(name): Updates the players name and returns the new name
 
+          - Private Methods:
+              - update_score: Updates score +10 points
+
   * Question: 
           - Responsibilites:
               - Create questions based on methods such as Addition,    
