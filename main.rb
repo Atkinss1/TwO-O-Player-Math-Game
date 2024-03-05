@@ -5,4 +5,4 @@ jordan = Player.new("Jordan")
 
 game = Game.new
 
-p game.question(3)
+game.question(1)
