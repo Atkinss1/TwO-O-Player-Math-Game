@@ -8,6 +8,10 @@ class Player
     @life = 3
   end
 
+  def increment_score
+    update_score
+  end
+
   private
 
   def update_score
