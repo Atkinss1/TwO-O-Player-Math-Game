@@ -3,28 +3,31 @@ module Question
   private
 
   def addition
-    addition = [rand(100), rand(100)]
-    question = "What is: #{addition[0]} + #{addition[1]}"
-    result = addition.reduce(:+)
+    add = [rand(100), rand(100)]
+    question = "What is: #{add[0]} + #{add[1]}"
+    result = add.reduce(:+)
     [question, result]
   end
 
-  def subraction
-    integer_one = rand(100)
-    integer_two = rand(100)
-    "What is: #{integer_one} - #{integer_two}"
+  def subtraction
+    subtract = [rand(100), rand(100)]
+    question = "What is: #{subtract[0]} - #{subtract[1]}"
+    result = subtract.reduce(:-)
+    [question, result]
   end
 
   def multiplication
-    integer_one = rand(10)
-    integer_two = rand(10)
-    "What is: #{integer_one} * #{integer_two}"
+    multiply = [rand(10), rand(10)]
+    question = "What is: #{multiply[0]} * #{multiply[1]}"
+    result = multiply.reduce(:*)
+    [question, result]
   end
 
   def division
-    integer_one = rand(10)
-    integer_two = rand(10)
-    "What is: #{integer_one} / #{integer_two}"
+    divide = [rand(10), rand(10)]
+    question = "What is: #{divide[0]} / #{divide[1]}"
+    result = divide.reduce(:/)
+    [question, result]
   end
 
 end
