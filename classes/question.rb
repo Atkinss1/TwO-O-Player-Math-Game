@@ -25,6 +25,7 @@ module Question
 
   def division
     divide = [rand(10), rand(10)]
+    divide[1] = 1 if divide[1] == 0 ## throws error if divide[1] is 0. eg 10 / 0
     question = "What is: #{divide[0]} / #{divide[1]}"
     result = divide.reduce(:/)
     [question, result]
