@@ -1,5 +1,5 @@
 class Player
-  attr_reader :score, :life
+  attr_reader :name, :score, :life 
 
   def initialize(name)
     @name = name
@@ -13,6 +13,10 @@ class Player
 
   def minus_life
     decrement_life
+  end
+
+  def to_s
+    @name
   end
 
   private
