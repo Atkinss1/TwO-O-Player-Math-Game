@@ -8,7 +8,7 @@ class Game
     @player_one = Player.new(player1)
     @player_two = Player.new(player2)
     @current_player = @player_one
-    @question_number = 18
+    @question_number = 1
     @answer = 0
   end
 
