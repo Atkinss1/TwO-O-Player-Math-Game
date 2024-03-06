@@ -3,7 +3,6 @@
   * Player
   * Question
   * Game
-  * PlayerManagement
 
   -- ROLES FOR EACH CLASS --
 
@@ -23,7 +22,7 @@
               - Create questions based on methods such as Addition,    
                 Multiplication, Subraction and Division.
             
-          - Private Methods:
+          - Public Methods:
               - addition  (eg 1 + 1)
               - subraction  (eg 1 - 1)
               - multiplication  (eg 1 * 1)
@@ -36,8 +35,9 @@
             
           - Attributes:
               - initialize Player1 & Player 2
+              - initialize (question_number = 0)
               - initialize ( answer = 0 )
-
+              - initialize current_player = Player1
           - Public Methods:
               - question(number) - will provide a question based on number
                                  given in the arguement.
@@ -47,15 +47,4 @@
                                            return a boolean value 
               - is_interger?(number) - check if user gives integer then invoke 
                                       correct_answer?(number)
-
-  * PlayerManagement:
-          - Responsibilites:
-              - Keep track of players turn and ending the game
-  
-          - Private Methods:
-              - player_turn - checks which players turn it is
-              - update_score - will update score if correct_answer is true
-              - game_end - will print out the winner of the current game if opposite player run out of lives
-
-
 =end
