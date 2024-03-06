@@ -1,6 +1,6 @@
-require './classes/player.rb'
 require './classes/game.rb'
 
-jordan = Player.new("Jordan")
 
-game = Game.new
+new_game = Game.new("John", "Jim")
+
+puts new_game.start
