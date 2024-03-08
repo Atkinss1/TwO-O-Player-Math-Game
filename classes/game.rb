@@ -56,17 +56,15 @@ class Game
     if @answer == input
       puts "YES! You are correct."
       @current_player.increment_score
-      next_players_turn
+      
     else
       puts "Seriously? No!"
       puts "The correct answer was #{@answer}.."
       @current_player.minus_life
       puts "--- #{@player_one}: #{@player_one.life} / 3 vs #{@player_two}: #{@player_two.life} / 3 ---"
-      next_players_turn
     end
     puts "#{@current_player}'s score is: #{@current_player.score}\n\n"
       @question_number += 1
-      next_players_turn
   end
 
   def next_players_turn
